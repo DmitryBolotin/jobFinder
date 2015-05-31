@@ -1,0 +1,80 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ubuntu/.nvm/v0.10.35/bin/node',
+1 verbose cli   '/home/ubuntu/.nvm/v0.10.35/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'jade' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.35
+4 warn package.json workspace@1.0.0 No repository field.
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ 'jade@0.0.0', null ]
+7 verbose cache add name=undefined spec="jade@0.0.0" args=["jade@0.0.0",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'jade@0.0.0',
+8 verbose parsed url   path: 'jade@0.0.0',
+8 verbose parsed url   href: 'jade@0.0.0' }
+9 verbose cache add name="jade" spec="0.0.0" args=["jade","0.0.0"]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: '0.0.0',
+10 verbose parsed url   path: '0.0.0',
+10 verbose parsed url   href: '0.0.0' }
+11 verbose addNamed [ 'jade', '0.0.0' ]
+12 verbose addNamed [ '0.0.0', '0.0.0' ]
+13 silly lockFile 85371f2d-jade-0-0-0 jade@0.0.0
+14 verbose lock jade@0.0.0 /home/ubuntu/.npm/85371f2d-jade-0-0-0.lock
+15 verbose request where is /jade
+16 verbose request registry https://registry.npmjs.org/
+17 verbose request id 8efdd22e9805fd10
+18 verbose url raw /jade
+19 verbose url resolving [ 'https://registry.npmjs.org/', './jade' ]
+20 verbose url resolved https://registry.npmjs.org/jade
+21 verbose request where is https://registry.npmjs.org/jade
+22 info trying registry request attempt 1 at 12:45:41
+23 verbose etag "14YD0VU0A0ZDCOSDPK8Z4WLHN"
+24 http GET https://registry.npmjs.org/jade
+25 http 304 https://registry.npmjs.org/jade
+26 silly registry.get cb [ 304,
+26 silly registry.get   { date: 'Sun, 31 May 2015 12:45:41 GMT',
+26 silly registry.get     via: '1.1 varnish',
+26 silly registry.get     'cache-control': 'max-age=60',
+26 silly registry.get     etag: '"14YD0VU0A0ZDCOSDPK8Z4WLHN"',
+26 silly registry.get     age: '30',
+26 silly registry.get     connection: 'keep-alive',
+26 silly registry.get     'x-served-by': 'cache-lcy1124-LCY',
+26 silly registry.get     'x-cache': 'HIT',
+26 silly registry.get     'x-cache-hits': '1',
+26 silly registry.get     'x-timer': 'S1433076341.440344,VS0,VE1',
+26 silly registry.get     vary: 'Accept' } ]
+27 verbose etag https://registry.npmjs.org/jade from cache
+28 silly lockFile 85371f2d-jade-0-0-0 jade@0.0.0
+29 silly lockFile 85371f2d-jade-0-0-0 jade@0.0.0
+30 error Error: version not found: jade@0.0.0
+30 error     at /home/ubuntu/.nvm/v0.10.35/lib/node_modules/npm/lib/cache/add-named.js:125:12
+30 error     at saved (/home/ubuntu/.nvm/v0.10.35/lib/node_modules/npm/node_modules/npm-registry-client/lib/get.js:167:7)
+30 error     at Object.oncomplete (fs.js:108:15)
+31 error If you need help, you may report this *entire* log,
+31 error including the npm and node versions, at:
+31 error     <http://github.com/npm/npm/issues>
+32 error System Linux 3.14.13-c9
+33 error command "/home/ubuntu/.nvm/v0.10.35/bin/node" "/home/ubuntu/.nvm/v0.10.35/bin/npm" "install" "--save" "jade"
+34 error cwd /home/ubuntu/workspace
+35 error node -v v0.10.35
+36 error npm -v 1.4.28
+37 verbose exit [ 1, true ]
