@@ -1,15 +1,9 @@
  (function() {
- var app =   angular.module('app', []);
+ var app =   angular.module('app', ['ngResource']);
 
-app.controller('jfAppCtrl',['$scope',function($scope) {
+app.controller('jfAppCtrl',['$scope','$resource',function($scope,$resource) {
         $scope.test = 'test';
-        $scope.jobList = [{
-            title: "Wlapa big",
-            description: "Take your place on the head"
-        }, {
-            title: "Killer",
-            description: "Kill some one"
-        }];
+        $scope.jobList = $resource('/api/jobs').query()
     }]);
 
  }());

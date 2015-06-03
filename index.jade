@@ -1,5 +1,7 @@
 link(rel='stylesheet', href='bower_components/bootstrap/dist/css/bootstrap.min.css')
 script(type='text/javascript', src='bower_components/angular/angular.min.js')
+script(type='text/javascript', src='bower_components/angular-resource/angular-resource.min.js')
+
 script(type='text/javascript', src='app/app.js')
 
 
@@ -11,6 +13,7 @@ body(ng-app='app')
                 a.list-group-item(href='#', ng-repeat="job in jobList")
                     h4.list-group-item-heading {{job.title}}
                     p.list-group-item-heading {{job.description}}
+                  
 
 
 
